@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 10px;
+}
+
+#home {
+  height: 100vh;
+}
+
+header {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 50px;
+  margin-bottom: 80px;
+}
+
+header img {
+  width: 50px;
+}
+
+header h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #58667e;
+  display: inline;
+}
+
+header a {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0079bf;
+  text-decoration: none;
+  border: 3px solid #0079bf;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+header div > h2 {
+  margin-right: 30px;
+}
+
+.home_intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home_intro div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home_intro h1 {
+  font-size: 4.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.home_intro h2 {
+  font-size: 1.5rem;
+  color: #58667e;
+  font-weight: 400;
+}
+
+.home_intro img {
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.typing {
+  position: relative;
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  right: -8px;
+  -webkit-animation: blink 0.7s infinite ease;
+          animation: blink 0.7s infinite ease;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

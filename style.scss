@@ -1,0 +1,106 @@
+@import "color.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $tillium-font;
+  font-size: 10px;
+}
+
+#home {
+  height: 100vh;
+}
+
+header {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px;
+
+  img {
+    width: 50px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: $font-color-p;
+    display: inline;
+  }
+
+  a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $primary-color;
+    text-decoration: none;
+
+    border: 3px solid $primary-color;
+
+    border-radius: 20px;
+
+    padding: 5px;
+  }
+
+  div > h2 {
+    margin-right: 30px;
+  }
+
+  margin-bottom: 80px;
+}
+
+.home_intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div {
+    display: flex;
+  }
+  h1 {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+
+    color: $font-color-p;
+    font-weight: 400;
+  }
+
+  img {
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+.typing {
+  position: relative;
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  //border-right: 4px solid black;
+  right: -8px;
+  animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
